@@ -1,0 +1,175 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3ab4d3; /* Warna latar belakang halaman */
+}
+
+/* Header Styles */
+.header {
+    background-color: #3b45d2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Bayangan pada header */
+}
+
+/* Body Styles */
+.body {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    background-color: #eac5e3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Bayangan pada sidebar */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #fa0808; /* Menambahkan border pada setiap item di dalam sidebar */
+    border-radius: 5px; /* Memberikan sudut membulat pada border */
+    padding: 10px; /* Menambahkan padding untuk memberikan ruang di dalam item */
+}
+
+.sidebar ul li:hover {
+    transform: scale(1.1);
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    background-color: #a8b083;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2); /* Bayangan dengan intensitas lebih tinggi */
+    color: white; /* Warna teks putih untuk kontras dengan latar belakang */
+}
+
+.main-content h2 {
+    font-size: 24px; /* Ukuran font judul */
+    margin-bottom: 20px; /* Ruang ekstra di bawah judul */
+    text-align: center; /* Pusatkan judul */
+}
+
+.main-content p {
+    font-size: 16px; /* Ukuran font paragraf */
+    line-height: 1.5; /* Jarak antar baris */
+}
+
+.main-content h3 {
+    font-size: 20px; /* Ukuran font subjudul */
+    margin-top: 20px; /* Ruang ekstra di atas subjudul */
+}
+
+/* Gaya untuk tombol "Daftar" */
+.button {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #bbf60b;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #03e012;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #3b45d2;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Animasi perubahan warna background tombol saat dihover */
+}
+
+input[type="submit"]:hover {
+    background-color: #1e257c;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Alternate row colors for the table */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #3b45d2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: bottom 0.3s ease; /* Animasi perubahan posisi bottom saat bergerak */
+}
+
+/* CSS untuk memindahkan footer ke atas saat konten lebih tinggi dari tinggi layar */
+body {
+    margin-bottom: 70px; /* Tinggi footer + margin tambahan untuk memberikan ruang di bawah konten */
+}
